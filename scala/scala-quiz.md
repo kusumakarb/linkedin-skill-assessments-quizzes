@@ -5,7 +5,7 @@
 - [ ] One is a Java object, the other is a Scala object.
 - [ ] clone() will copy class structures but not the data, while copy() will also copy data into new objects.
 - [ ] There is no difference.
-- [x] copy() allows you to change values during the copying process; clone() does not.
+- [ ] copy() allows you to change values during the copying process; clone() does not.
 
 #### Q2. What value does this code return?
 
@@ -17,20 +17,20 @@ m1("a")
 - [ ] a
 - [ ] 2
 - [ ] b
-- [x] 1
+- [ ] 1
 
 #### Q3. What is one way to avoid low-level parallelization details?
 
 - [ ] monads
 - [ ] literal functions
 - [ ] partially applied functions
-- [x] parallel collections
+- [ ] parallel collections
 
 #### Q4. What do you use in ScalaTest to see a detailed diagram of error messages when a test fails?
 
 - [ ] ArgumentExceptions
 - [ ] AssertionException
-- [x] DiagrammedAssertions
+- [ ] DiagrammedAssertions
 - [ ] JUnit
 
 #### Q5. What data type would you use to store an immutable collection of objects that contain a fixed number of varying types?
@@ -38,7 +38,7 @@ m1("a")
 - [ ] Array
 - [ ] ImmutableCollection
 - [ ] List
-- [x] Tuple
+- [ ] Tuple
 
 #### Q6. After defining a function in the interpreter, Scala returns the following. What does the `()` indicate?
 
@@ -48,14 +48,14 @@ myfnc: ()Unit
 
 - [ ] The function has no side effects.
 - [ ] The function takes no parameters.
-- [x] The function returns no value.
+- [ ] The function returns no value.
 - [ ] Returning unit types to the function is a closures.
 
 #### Q7. What type of number is 1234.e5?
 
 - [ ] hexadecimal
 - [ ] short
-- [x] floating point
+- [ ] floating point
 - [ ] long
 
 #### Q8. When you convert a map to a list using the `toList` method of the map, the result will be of which type?
@@ -63,7 +63,7 @@ myfnc: ()Unit
 - [ ] `List[(String, String)]`
 - [ ] `List[(Array, Array)]`
 - [ ] `List[(Collection, Collection)]`
-- [x] `List`
+- [ ] `List`
 
 #### Q9. What type of object does this code create?
 
@@ -73,7 +73,7 @@ val x = (1234, "Active")
 
 - [ ] List
 - [ ] Map
-- [x] Tuple
+- [ ] Tuple
 - [ ] Array
 
 #### Q10. Which is a subclass of all classes?
@@ -81,7 +81,7 @@ val x = (1234, "Active")
 - [ ] AnyVal
 - [ ] AnyRef
 - [ ] Method
-- [x] Null
+- [ ] Null
 
 **Reference**: [Null in Scala Standard library](https://www.scala-lang.org/api/current/scala/Null.html). The question is a bit incorrect - Null is a subtype of every type _except those of value classes_
 
@@ -89,7 +89,7 @@ val x = (1234, "Active")
 
 - [ ] Yes and no. It is different depending on the for construct and what it does.
 - [ ] Yes, because the for section does not expose its scope.
-- [x] No, because for-yield shares the same scope, even though they are within separate curly braces.
+- [ ] No, because for-yield shares the same scope, even though they are within separate curly braces.
 - [ ] Yes, because they are within different curly braces.
 
 **Example**: yield-body has access to the `e` variable from the for-body
@@ -118,13 +118,13 @@ val z = y::List('c')
 ```
 
 - [ ] List(a,b,c)
-- [x] List(List(a, b), c)
+- [ ] List(List(a, b), c)
 - [ ] List(c,a,b)
 - [ ] List(c,List(a,b))
 
 #### Q14. What term is used to specify a precondition?
 
-- [x] assert
+- [ ] assert
 - [ ] require
 - [ ] precondition
 - [ ] mustHave
@@ -134,7 +134,7 @@ val z = y::List('c')
 - [ ] `scala.util.ExceptionHandling`
 - [ ] `scala.Catch.Throw`
 - [ ] `scala.exception.TryFinally`
-- [x] `scala.util.Try`
+- [ ] `scala.util.Try`
 
 **Reference**: [scala.util.Try](https://www.scala-lang.org/api/current/scala/util/Try.html)
 
@@ -145,14 +145,14 @@ val y = (math floor 3.1415 * 2)
 ```
 
 - [ ] short
-- [x] double
+- [ ] double
 - [ ] int
 - [ ] bigInt
 
 #### Q17. When using pattern matching, which character matches on any object?
 
 - [ ] `%`
-- [x] `_`
+- [ ] `_`
 - [ ] `^`
 - [ ] `-`
 
@@ -160,7 +160,7 @@ val y = (math floor 3.1415 * 2)
 
 #### Q18. You have created an array using val. Can you change the value of any element of the array—and why or why not?
 
-- [x] Yes, the reference to the array is immutable, so the location that the array points to is immutable. The values in the array are mutable.
+- [ ] Yes, the reference to the array is immutable, so the location that the array points to is immutable. The values in the array are mutable.
 - [ ] The 0th element is immutable and cannot be modified. All other elements can be modified.
 - [ ] Yes, val does not make arrays immutable.
 - [ ] No, val makes the array and values of the array immutable.
@@ -183,21 +183,21 @@ def main () {
 
 - [ ] 1,2,3,4,5
 - [ ] 0,1,2,3,4
-- [x] 1,2,3,4
+- [ ] 1,2,3,4
 - [ ] 2,3,4,5
 
 #### Q20. What do you call objects with immutable state?
 
 - [ ] singletons
 - [ ] stationary objects
-- [x] functional objects
+- [ ] functional objects
 - [ ] fixed objects
 
 **Note:** singletons may have mutable state
 
 #### Q21. You have written a Scala script. How would you access command-line arguments in the script?
 
-- [x] use array named args
+- [ ] use array named args
 - [ ] use tuple named args
 - [ ] use numbered variables with a _ prefix for example _ 1, _ 2, _ 3
 - [ ] use numbered variables with a $ prefix - for example $1, $2, $3
@@ -205,7 +205,7 @@ def main () {
 #### Q22. What does this code return? `val x = 3; if (x > 2) x = 4 else x = x*2`
 
 - [ ] 4
-- [x] an error
+- [ ] an error
 - [ ] 6
 - [ ] 3
 
@@ -213,7 +213,7 @@ def main () {
 
 `val MyFuture = Future {runBackgroundFunction() }`
 
-- [x] myFuture.onComplete
+- [ ] myFuture.onComplete
 - [ ] myFuture(status)
 - [ ] myFuture.Finished
 - [ ] complete(myFuture)
@@ -223,20 +223,20 @@ def main () {
 - [ ] `%`
 - [ ] `&`
 - [ ] `_`
-- [x] `-`
+- [ ] `-`
 
 #### Q25. What is called when a superclass has more than one subclass in Scala?
 
 - [ ] polyinheritance
 - [ ] multilevel inheritance
 - [ ] multimode inheritance
-- [x] hierarchical inheritance
+- [ ] hierarchical inheritance
 
 #### Q26. One way to improve code reliability is to use `__` , which will evaluate a condition and return an error if the condition is violated.
 
 - [ ] packages
 - [ ] polymorphisms
-- [x] assertions
+- [ ] assertions
 - [ ] traits
 
 #### Q27. Which statement about if-else-if-else statements is true?
@@ -244,19 +244,19 @@ def main () {
 - [ ] If the first else-if does not succeed, then no other else-ifs are tested.
 - [ ] If an else-if does not succeed, then none of the remaining else-if statements or elses will be tested.
 - [ ] All else-if statements are tested in all cases.
-- [x] If an else-if succeeds, then none of the remaining else-if statements or elses will tested.
+- [ ] If an else-if succeeds, then none of the remaining else-if statements or elses will tested.
 
 #### Q28. What do you call the process of changing the definition of an inherited method?
 
 - [ ] recursive methods
 - [ ] currying methods
 - [ ] redefining methods
-- [x] overriding methods
+- [ ] overriding methods
 
 #### Q29. To denote a parameter that may be repeated, what should you place after the type?
 
 - [ ] `_`
-- [x] `*`
+- [ ] `*`
 - [ ] `%`
 - [ ] `&`
 
@@ -271,18 +271,18 @@ myClass.foreach(println _)
 - [ ] `myClass.foreach(println ())`
 - [ ] `myClass.foreach(print NIL)`
 - [ ] `myClass.loop(println ())`
-- [x] `myClass.foreach(x => println(x))`
+- [ ] `myClass.foreach(x => println(x))`
 
 #### Q31. What is an advantage of an immutable object?
 
 - [ ] Immutable objects use less memory than their mutable counterparts.
 - [ ] Immutable objects do not require error handling.
 - [ ] Immutable objects can be used in classes, mutable objects cannot.
-- [x] Immutable objects are threadsafe.
+- [ ] Immutable objects are threadsafe.
 
 #### Q32. You want to create an iteration loop that tests the condition at the end of the loop body. Which iteration would you use?
 
-- [x] do-while loop
+- [ ] do-while loop
 - [ ] while loop
 - [ ] for loop
 - [ ] do-until loop
@@ -291,7 +291,7 @@ myClass.foreach(println _)
 
 - [ ] database driver
 - [ ] connection
-- [x] prepared statement
+- [ ] prepared statement
 - [ ] SQL view
 
 **Reference**: [PreparedStatement from Java](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) which is also used in Scala
@@ -300,19 +300,19 @@ myClass.foreach(println _)
 
 - [ ] Set
 - [ ] Seq
-- [x] Hash
+- [ ] Hash
 - [ ] Map
 
 #### Q35. Which term makes the contents of packages available without prefixing?
 
 - [ ] use
 - [ ] include
-- [x] import
+- [ ] import
 - [ ] assertion
 
 #### Q36. If you wanted to find the remainder after division, what operator would you use?
 
-- [x] %
+- [ ] %
 - [ ] DIV
 - [ ] //
 - [ ] /
@@ -320,7 +320,7 @@ myClass.foreach(println _)
 #### Q37. What are defined inside a class definition?
 
 - [ ] method
-- [x] fields and methods
+- [ ] fields and methods
 - [ ] fields, methods, and packages
 - [ ] fields
 
@@ -328,21 +328,21 @@ myClass.foreach(println _)
 
 - [ ] singleton
 - [ ] assertion
-- [x] trait
+- [ ] trait
 - [ ] monad
 
 #### Q39. When do you need to explicitly state the return type in a function definition?
 
 - [ ] when the function has no side effects
 - [ ] when the function returns a Unit type
-- [x] when the function is recursive
+- [ ] when the function is recursive
 - [ ] when the function has side effects
 
 #### Q40. Why would you make a field private?
 
 - [ ] so only methods in the same file can access the field
 - [ ] so only methods in the same package can access the field
-- [x] so only methods in the same class could access the field
+- [ ] so only methods in the same class could access the field
 - [ ] so only methods defined in a Java class can access the field
 
 #### Q41. What's the difference between `.equals` and `==`?
@@ -350,7 +350,7 @@ myClass.foreach(println _)
 - [ ] They do the exact same thing
 - [ ] `==` won't work on objects
 - [ ] `==` cannot be applied to `String`
-- [x] `==` is a wrapper of `.equals()` and checks for nulls
+- [ ] `==` is a wrapper of `.equals()` and checks for nulls
 
 [Source:](https://www.programmersought.com/article/3717957705/)
 
@@ -358,7 +358,7 @@ myClass.foreach(println _)
 
 - [ ] ||
 - [ ] &&
-- [x] &
+- [ ] &
 - [ ] %
 
 [Source:](https://docs.scala-lang.org/overviews/collections/sets.html)
@@ -386,7 +386,7 @@ myClass.foreach(println _)
 
 #### Q46. What type of exception is thrown when a precondition is violated?
 
-- [x] IllegalArgumentException
+- [ ] IllegalArgumentException
 - [ ] NumberFormatException
 - [ ] NullPointerExcepetion
 - [ ] MalformedParameterException
@@ -395,7 +395,7 @@ myClass.foreach(println _)
 
 - [ ] a constraint on where a method may be called from
 - [ ] a constraint on values passed to a methode constructor
-- [x] a class of predifined error messages
+- [ ] a class of predifined error messages
 - [ ] a class of Boolean operators
 
 #### Q48. What would you change in this code to make it execute in parallel?
@@ -405,21 +405,21 @@ myClass.foreach(println _)
  list.map(_ + 1)
 ```
 
-- [x] Change **list.map** to **list.par.map.**
+- [ ] Change **list.map** to **list.par.map.**
 - [ ] Change **toList** to **toListPar**
 - [ ] Change **val** to **val.par**
 - [ ] Change **toList** to **toParallelList**
 
 #### Q49. What is a free variable?
 
-- [x] a variable defined outside a function
+- [ ] a variable defined outside a function
 - [ ] a variable referenced in a function that is not assigned a value by that function
 - [ ] a variable that has a global scope
 - [ ] a variable defined in a class and available to all methods in that class
 
 #### Q50. What is the difference between .equals() and == ?
 
-- [x] **==** is wrapper of **.equals()** and checks for Nulls
+- [ ] **==** is wrapper of **.equals()** and checks for Nulls
 - [ ] They do the exact same thing.
 - [ ] == cannot be applied to String.
 - [ ] == won't work on objects
@@ -429,7 +429,7 @@ myClass.foreach(println _)
 - [ ] AltThread
 - [ ] AltFuture
 - [ ] AltProcess
-- [x] Future
+- [ ] Future
 
 #### Q53. What value does this code return?
 
@@ -440,4 +440,4 @@ x= List(1,2,4); x(1)?
 - [ ] (1,2,4)
 - [ ] 1
 - [ ] Nil
-- [x] 2
+- [ ] 2
